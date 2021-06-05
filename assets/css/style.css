@@ -1,0 +1,26 @@
+Header {
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px;
+}
+
+div{
+    padding: 5px;
+}
+
+P{
+    text-align: center;
+}
+
+button{
+    background-color:  #4B0082;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.highScore{
+    background-color: #D8BFD8;
+    margin: 10px;
+    border-radius: 4px
+}

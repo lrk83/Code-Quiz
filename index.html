@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--timer and high scores button-->
+    <Header class="navbar navbar-light bg-light">
+        <a class="navbar-brand" id="highScores">View Highscores</a>
+        <span id="count" class="navbar-text">
+            60
+        </span>
+    </Header>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <h2 id="questionBox">Coding Quiz Challenge</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center" id="instructions">
+                    <p>Try to answer the following code-related question within the time limit. Keep in mind that incorrect answers will penalize your time/score by ten seconds!</p>
+                </div>
+                <div class="row justify-content-md-center" id="answerBox">
+                    <div class="col-md-auto" >
+                        <button type="button" id="startgame">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="correctBox">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
