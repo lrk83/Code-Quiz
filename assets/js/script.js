@@ -237,7 +237,7 @@ var loadHighScores = function(){
 
 var resetPage = function(){
     questionBox.textContent="Coding Quiz Challenge";
-    instructions.innerHTML="<p>Try to answer the following code-related question within the time limit. Keep in mind that incorrect answers will penalize your time/score by ten seconds!</p>";
+    instructions.innerHTML="<p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time/score by ten seconds!</p>";
     answerBox.innerHTML="<div class='col-md-auto'><button type='button' id='startgame'>Start Quiz</button></div>";
     count=60;
     questionNumber=0;
