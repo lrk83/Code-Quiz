@@ -9,5 +9,12 @@ This webpage runs a timed quiz on JavaScript fundamentals and saves high scores.
 
 ### Screenshots
 
-![Deployed Application]()
+![Instructions Page](https://github.com/lrk83/Code-Quiz/blob/main/Screenshots/Screen%20Shot%202021-06-06%20at%209.22.59%20PM.png)
 
+![First Question](https://github.com/lrk83/Code-Quiz/blob/main/Screenshots/Screen%20Shot%202021-06-06%20at%209.23.51%20PM.png)
+
+![After Getting a Question Wrong](https://github.com/lrk83/Code-Quiz/blob/main/Screenshots/Screen%20Shot%202021-06-06%20at%209.24.01%20PM.png)
+
+![Final Score Screen](https://github.com/lrk83/Code-Quiz/blob/main/Screenshots/Screen%20Shot%202021-06-06%20at%209.24.38%20PM.png)
+
+![High Scores](https://github.com/lrk83/Code-Quiz/blob/main/Screenshots/Screen%20Shot%202021-06-06%20at%209.25.10%20PM.png)
