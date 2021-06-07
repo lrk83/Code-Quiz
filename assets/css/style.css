@@ -19,8 +19,22 @@ button{
     margin: 10px;
 }
 
+button:hover{
+    background-color: #7d688b;
+}
+
 .highScore{
     background-color: #D8BFD8;
     margin: 10px;
     border-radius: 4px
+}
+
+#questionBox{
+    text-align: center;
+    line-height: 1.5;
+}
+
+#correctBox{
+    color: darkgray;
+
 }

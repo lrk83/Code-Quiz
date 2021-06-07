@@ -6,7 +6,7 @@ var correctBox=document.querySelector("#correctBox");
 var highScores=document.querySelector("#highScores");
 var count = 60;
 var questions = ["Arrays in JavaScript can be used to store ____________.","The condition in an if/else statement is enclosed with ___________.","String values must be enclosed within _______ when being assigned to variables","A very useful tool during development and debugging for printing content to the debugger is:","Commonly used data types DO NOT include: "]
-var answers = [["numbers and strings","other arrays","booleans","all of the above"],["quotes","curley brackets","parenthesis","sqaure brackets"],["commas","curley brackets","quotes","parenthesis"],["JavaScript","terminal/bash","for loops","console log"],["Strings","booleans","alerts","numbers"]];
+var answers = [["numbers and strings","other arrays","booleans","all of the above"],["quotes","curley brackets","parenthesis","sqaure brackets"],["commas","curley brackets","quotes","parenthesis"],["JavaScript","terminal/bash","for loops","console.log"],["Strings","booleans","alerts","numbers"]];
 var rightAnswers=["all of the above","parenthesis","quotes","console.log","alerts",]
 var questionNumber=0;
 var scores=[]
@@ -28,10 +28,11 @@ var checkAnswer = function(choice){
     //Incorrect
     else{
         correctBox.textContent="";
-        correct.textContent="Inorrect!";
+        correct.textContent="Incorrect!";
         correctBox.appendChild(correct);
         questionNumber++;
         count=count-10;
+        document.getElementById("count").innerHTML=count;
         newQuestion();
     }
 };
@@ -73,13 +74,17 @@ var runQuiz = function (){
 
     //Timer
     var interval = setInterval(function(){
+        if (questionNumber===5){
+            clearInterval(interval);
+            return null;
+        };
         count--;
         document.getElementById('count').innerHTML=count;
         if (count <= 0){
-        count=0;
-        document.getElementById('count').innerHTML=count;
-        clearInterval(interval);
-        endGame();
+            count=0;
+            document.getElementById('count').innerHTML=count;
+            clearInterval(interval);
+            endGame();
         }
     }, 1000);
 
@@ -92,7 +97,6 @@ var runQuiz = function (){
 };
 
 var endGame = function() {
-    questionNumber=0;
 
     correctBox.innerHTML="";
     //Update header
@@ -236,6 +240,7 @@ var resetPage = function(){
     instructions.innerHTML="<p>Try to answer the following code-related question within the time limit. Keep in mind that incorrect answers will penalize your time/score by ten seconds!</p>";
     answerBox.innerHTML="<div class='col-md-auto'><button type='button' id='startgame'>Start Quiz</button></div>";
     count=60;
+    questionNumber=0;
     document.getElementById('count').innerHTML=count;
 }
 
